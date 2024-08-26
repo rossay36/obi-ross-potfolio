@@ -11,9 +11,9 @@ const Projects = () => {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	const images = [
-		IMG_URL + "project4.png",
-		IMG_URL + "project3.png",
-		IMG_URL + "project5.png",
+		"/images/project4.png",
+		"/images/project3.png",
+		"/images/project5.png",
 	];
 
 	const openLightbox = (index) => {

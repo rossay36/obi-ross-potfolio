@@ -38,7 +38,7 @@ const Navbar = () => {
 			<div className=" flex items-center gap-4 cursor-pointer">
 				<img
 					className="w-11 h-11 rounded-full"
-					src="../../../src/assets/john1.png"
+					src="/images/john1.png"
 					alt="Profile Photo"
 				/>
 				<p className="">Obi Ross</p>

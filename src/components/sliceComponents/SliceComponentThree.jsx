@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import project5 from "../../assets/project5.png";
+// import project5 from "../../assets/project5.png";
 const IMG_URL = import.meta.env.VITE_PUBLIC_FOLDER;
 
 const SliceComponentThree = () => {
 	return (
 		<div
 			className="relative flex flex-col md:flex-row items-center justify-center height p-8 bg-cover bg-center text-white"
-			style={{ backgroundImage: `url(${IMG_URL + project5})` }}
+			style={{ backgroundImage: `url(/images/project5.png)` }}
 		>
 			<div className="absolute inset-0 bg-black opacity-55"></div>
 
