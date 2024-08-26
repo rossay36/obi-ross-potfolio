@@ -163,12 +163,12 @@ const Contacts = () => {
 							<li>
 								<strong>GitHub:</strong>{" "}
 								<a
-									href="https://github.com/yourusername"
+									href="https://github.com/rossay36"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-blue-600 hover:underline"
 								>
-									github.com/yourusername
+									github.com/rossay36
 								</a>
 							</li>
 						</ul>

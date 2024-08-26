@@ -12,7 +12,7 @@ const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 
 	const handleToggle = () => {
-		setToggle(!toggle);
+		setToggle((prev) => !prev);
 	};
 
 	const scrollToTop = () => {
@@ -24,26 +24,20 @@ const Navbar = () => {
 
 	// Handle link click and scroll to top
 	const handleLinkClick = () => {
-		setToggle(false);
+		setToggle((prev) => !prev);
 		scrollToTop();
 	};
 	return (
-		<nav
-			className={
-				toggle
-					? "small_media"
-					: "max-w-full bg-secondary font-bold text-black border min-h-[70.5px] flex items-center p-2 justify-around border-red-200 sticky top-0 left-0 right-0 z-10 "
-			}
-		>
+		<nav className="nav_full_screen">
 			<div className=" flex items-center gap-4 cursor-pointer">
 				<img
-					className="w-11 h-11 rounded-full"
-					src="/images/john1.png"
+					className="w-12 h-12 rounded-full object-cover"
+					src="/images/obi.png"
 					alt="Profile Photo"
 				/>
 				<p className="">Obi Ross</p>
 			</div>
-			<ul className={toggle ? "nav_small_media" : "nav_big_screen"}>
+			<ul className={toggle ? "nav_big_screen active" : "nav_big_screen"}>
 				<Link
 					to="/"
 					className=" flex items-center gap-4"
@@ -99,6 +93,14 @@ const Navbar = () => {
 				>
 					<MdContactPhone className="nav_icons" />
 					<span>Contact</span>
+				</Link>
+				<Link
+					to="eduction"
+					className=" flex items-center gap-4"
+					onClick={handleLinkClick}
+				>
+					<MdContactPhone className="nav_icons" />
+					<span>Eduction</span>
 				</Link>
 			</ul>
 			<div className="nav_toggle_btn" onClick={handleToggle}>

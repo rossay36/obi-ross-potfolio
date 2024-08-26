@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Contacts from "./pages/Contacts";
 import MissingPage from "./pages/MissingPage";
 import Services from "./pages/Services";
+import Education from "./pages/Education";
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 					<Route path="/skills" element={<Skills />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contact" element={<Contacts />} />
+					<Route path="/eduction" element={<Education />} />
 					<Route path="*" element={<MissingPage />} />
 				</Route>
 			</Routes>
