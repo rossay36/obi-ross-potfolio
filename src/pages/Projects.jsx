@@ -4,14 +4,16 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root"); // For accessibility
 
+const IMG_URL = import.meta.env.VITE_PUBLIC_FOLDER;
+
 const Projects = () => {
 	const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	const images = [
-		"../../../src/assets/project4.png",
-		"../../../src/assets/project3.png",
-		"../../../src/assets/project5.png",
+		IMG_URL + "project4.png",
+		IMG_URL + "project3.png",
+		IMG_URL + "project5.png",
 	];
 
 	const openLightbox = (index) => {
