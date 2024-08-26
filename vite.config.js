@@ -4,8 +4,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	plugins: [react()],
 	build: {
-		outDir: "dist", // Output directory for the build
-		sourcemap: false, // Disable sourcemaps for production
+		outDir: "dist",
+		sourcemap: false,
+		rollupOptions: {
+			input: {
+				main: "./index.html",
+			},
+		},
 	},
-	base: "/", // Set the base URL if necessary
 });
