@@ -21,7 +21,7 @@ const Contacts = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setStatus(""); // Clear previous status
-		setError(""); // Clear previous error
+		setError(""); // Clear previous errors
 
 		try {
 			const res = await axios.post(
