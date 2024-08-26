@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+	@apply bg-primary text-white hover:bg-accent;
+}
+
+.card-highlight {
+	@apply bg-highlight text-white;
+}
+
+.border {
+	border: 1px solid rgb(3, 3, 175);
+}
+
+.height {
+	@apply h-[75vh];
+}
+
+/* src/styles.css or your main CSS file */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 90%;
+	max-height: 80%;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.full-image {
+	width: 100%;
+	height: auto;
+}
+
+.close-button,
+.prev-button,
+.next-button {
+	position: absolute;
+	background: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.close-button {
+	top: 10px;
+	right: 10px;
+}
+
+.prev-button {
+	left: 10px;
+	top: 50%;
+}
+
+.next-button {
+	right: 10px;
+	top: 50%;
+}
