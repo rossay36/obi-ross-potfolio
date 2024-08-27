@@ -76,6 +76,15 @@ const Footer = () => {
 						</li>
 						<li>
 							<Link
+								to="contact"
+								className="text-blue-600 hover:underline"
+								onClick={handleLinkClick}
+							>
+								Contact
+							</Link>
+						</li>
+						<li>
+							<Link
 								to="blog"
 								className="text-blue-600 hover:underline"
 								onClick={handleLinkClick}
@@ -83,13 +92,14 @@ const Footer = () => {
 								Blog
 							</Link>
 						</li>
+
 						<li>
 							<Link
 								to="contact"
 								className="text-blue-600 hover:underline"
 								onClick={handleLinkClick}
 							>
-								Contact
+								Eduction / CV
 							</Link>
 						</li>
 					</ul>
@@ -162,7 +172,7 @@ const Footer = () => {
 
 			{/* Copyright Notice */}
 			<div className="bg-gray-200 py-4 mt-8 text-center">
-				<p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+				<p>&copy; 2024 Obi Ross. All Rights Reserved.</p>
 			</div>
 		</footer>
 	);

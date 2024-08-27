@@ -47,14 +47,6 @@ const Navbar = () => {
 					<span>Home</span>
 				</Link>
 				<Link
-					to="services"
-					className=" flex items-center gap-4"
-					onClick={handleLinkClick}
-				>
-					<GrServices className="nav_icons" />
-					<span>Services</span>
-				</Link>
-				<Link
 					to="about"
 					className=" flex items-center gap-4"
 					onClick={handleLinkClick}
@@ -62,6 +54,15 @@ const Navbar = () => {
 					<IoPersonOutline className="nav_icons" />
 					<span>About</span>
 				</Link>
+				<Link
+					to="services"
+					className=" flex items-center gap-4"
+					onClick={handleLinkClick}
+				>
+					<GrServices className="nav_icons" />
+					<span>Services</span>
+				</Link>
+
 				<Link
 					to="projects"
 					className=" flex items-center gap-4"
@@ -79,14 +80,6 @@ const Navbar = () => {
 					<span>Skills</span>
 				</Link>
 				<Link
-					to="blog"
-					className=" flex items-center gap-4"
-					onClick={handleLinkClick}
-				>
-					<GrBlog className="nav_icons" />
-					<span>Blog</span>
-				</Link>
-				<Link
 					to="contact"
 					className=" flex items-center gap-4"
 					onClick={handleLinkClick}
@@ -94,6 +87,15 @@ const Navbar = () => {
 					<MdContactPhone className="nav_icons" />
 					<span>Contact</span>
 				</Link>
+				<Link
+					to="blog"
+					className=" flex items-center gap-4"
+					onClick={handleLinkClick}
+				>
+					<GrBlog className="nav_icons" />
+					<span>Blog</span>
+				</Link>
+
 				<Link
 					to="eduction"
 					className=" flex items-center gap-4"

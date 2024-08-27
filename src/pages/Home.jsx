@@ -14,6 +14,7 @@ import Blog from "./Blog";
 import Services from "./Services";
 import Contacts from "./Contacts";
 import Skills from "./Skills";
+import Projects from "./Projects";
 import useTitle from "../hooks/useTitle";
 
 const Home = () => {
@@ -53,6 +54,7 @@ const Home = () => {
 			</>
 			<About />
 			<Services />
+			<Projects />
 			<Skills />
 			<Contacts />
 			<Blog />
