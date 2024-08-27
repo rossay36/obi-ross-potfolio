@@ -1,12 +1,17 @@
 // src/components/Project.js
 import React, { useState } from "react";
 import Modal from "react-modal";
+import useTitle from "../hooks/useTitle";
 
 Modal.setAppElement("#root"); // For accessibility
 
 const IMG_URL = import.meta.env.VITE_PUBLIC_FOLDER;
 
 const Projects = () => {
+	useTitle(
+		"Projects page",
+		"https://th.bing.com/th/id/R.ba9bbc88be4c58a273889a17f7a94f00?rik=atehCeB3o639ew&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f14%2fGolden-Badge-Transparent-PNG.png&ehk=%2bHYV23vObrT9WFFHg1q4XY0a4uE4hI0OKIIi6sv%2b7L8%3d&risl=&pid=ImgRaw&r=0"
+	);
 	const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

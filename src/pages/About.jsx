@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useTitle from "../hooks/useTitle";
 
 const About = () => {
+	useTitle(
+		"About page",
+		"https://th.bing.com/th/id/R.ba9bbc88be4c58a273889a17f7a94f00?rik=atehCeB3o639ew&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f14%2fGolden-Badge-Transparent-PNG.png&ehk=%2bHYV23vObrT9WFFHg1q4XY0a4uE4hI0OKIIi6sv%2b7L8%3d&risl=&pid=ImgRaw&r=0"
+	);
 	return (
 		<section className="py-2 bg-gray-50">
 			<div className="container mx-auto px-4">
@@ -57,7 +62,7 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center gap-2 ">
+				<div className="flex items-center gap-2 flex-wrap">
 					<Link to="/projects" className="text-blue-600 hover:underline">
 						Check out my work or
 					</Link>

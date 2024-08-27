@@ -21,7 +21,7 @@ const Footer = () => {
 				{/* Contact Information */}
 				<div className="w-full md:w-1/4 mb-6 md:mb-0">
 					<p className="font-bold mb-2">Contact Me</p>
-					<p>9 Waidi Cresent, Lago, Lago, 100001</p>
+					<p>9 Waidi Crescent, Lagos, Lagos, 100001</p>
 					<p>Phone: +234 7011128034</p>
 					<p>
 						Email:{" "}
@@ -139,26 +139,17 @@ const Footer = () => {
 					<p className="font-bold mb-2">Legal</p>
 					<ul className="space-y-2">
 						<li>
-							<a
-								href="/privacy-policy"
-								className="text-blue-600 hover:underline"
-							>
+							<a href="#" className="text-blue-600 hover:underline">
 								Privacy Policy
 							</a>
 						</li>
 						<li>
-							<a
-								href="/terms-of-service"
-								className="text-blue-600 hover:underline"
-							>
+							<a href="#" className="text-blue-600 hover:underline">
 								Terms of Service
 							</a>
 						</li>
 						<li>
-							<a
-								href="/cookie-policy"
-								className="text-blue-600 hover:underline"
-							>
+							<a href="#" className="text-blue-600 hover:underline">
 								Cookie Policy
 							</a>
 						</li>

@@ -3,9 +3,9 @@ import "./navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import { MdContactPhone, MdHome } from "react-icons/md";
+import { MdCastForEducation, MdContactPhone, MdHome } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
-import { GrBlog, GrProjects } from "react-icons/gr";
+import { GrBlog, GrProjects, GrServices } from "react-icons/gr";
 import { BsPersonWorkspace } from "react-icons/bs";
 
 const Navbar = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
 					className=" flex items-center gap-4"
 					onClick={handleLinkClick}
 				>
-					<IoPersonOutline className="nav_icons" />
+					<GrServices className="nav_icons" />
 					<span>Services</span>
 				</Link>
 				<Link
@@ -99,8 +99,8 @@ const Navbar = () => {
 					className=" flex items-center gap-4"
 					onClick={handleLinkClick}
 				>
-					<MdContactPhone className="nav_icons" />
-					<span>Eduction</span>
+					<MdCastForEducation className="nav_icons" />
+					<span>Eduction / CV</span>
 				</Link>
 			</ul>
 			<div className="nav_toggle_btn" onClick={handleToggle}>

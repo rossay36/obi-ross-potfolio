@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import useTitle from "../hooks/useTitle";
 
 Modal.setAppElement("#root"); // For accessibility
 
 const Education = () => {
+	useTitle(
+		"Education page",
+		"https://th.bing.com/th/id/R.ba9bbc88be4c58a273889a17f7a94f00?rik=atehCeB3o639ew&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f14%2fGolden-Badge-Transparent-PNG.png&ehk=%2bHYV23vObrT9WFFHg1q4XY0a4uE4hI0OKIIi6sv%2b7L8%3d&risl=&pid=ImgRaw&r=0"
+	);
 	const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -111,7 +116,7 @@ const Education = () => {
 							ITC
 							<br />
 							<a
-								href="[Verification Link]"
+								href="https://linar.ng"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-blue-500"
@@ -131,7 +136,7 @@ const Education = () => {
 							SCHOOL OF MEDIA & ITC
 							<br />
 							<a
-								href="[Verification Link]"
+								href="https://linar.ng"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-blue-500"
