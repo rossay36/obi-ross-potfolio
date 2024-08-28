@@ -7,7 +7,7 @@ const SliceComponentTwo = () => {
 	return (
 		<div
 			className="relative flex items-center justify-center height p-8 bg-cover bg-center text-white"
-			style={{ backgroundImage: `url(/images/project3.png)` }}
+			style={{ backgroundImage: `url(/images/portfolio-bg.png)` }}
 		>
 			<div className="absolute inset-0 bg-black w-full h-full opacity-75"></div>
 			<div className="relative max-w-lg text-center md:text-left z-10">
