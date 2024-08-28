@@ -16,7 +16,7 @@ const Footer = () => {
 		scrollToTop();
 	};
 	return (
-		<footer className="bg-gray-900 text-white py-8">
+		<footer className="bg-secondary text-black py-8">
 			<div className="container mx-auto px-6">
 				<div className="flex flex-wrap justify-between mb-12">
 					{/* Contact Information */}
