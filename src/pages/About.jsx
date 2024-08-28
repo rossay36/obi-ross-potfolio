@@ -10,13 +10,22 @@ const About = () => {
 	return (
 		<section className="py-8 bg-gray-50">
 			<div className="container mx-auto px-6">
-				<div className="text-center mb-8">
-					<h2 className="text-3xl font-bold mb-6 text-black">About Me</h2>
-					<p className="text-lg text-gray-600">
-						Hi, I'm Obi Ross, a dedicated web developer with a passion for
-						creating dynamic, user-centric websites and applications.
-					</p>
+				{/* Image and text side by side */}
+				<div className="flex flex-col md:flex-row items-center justify-between mb-8">
+					<img
+						src="https://images.unsplash.com/photo-1588293330623-c87390aec2d9?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt="Professional"
+						className="rounded-lg w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0"
+					/>
+					<div className="md:w-1/2 lg:w-2/3 md:pl-6">
+						<h2 className="text-3xl font-bold mb-6 text-black">About Me</h2>
+						<p className="text-lg text-gray-600">
+							Hi, I'm Obi Ross, a dedicated web developer with a passion for
+							creating dynamic, user-centric websites and applications.
+						</p>
+					</div>
 				</div>
+
 				<div className="flex flex-wrap justify-center">
 					{/* Who I Am */}
 					<div className="w-full md:w-1/2 lg:w-1/3 px-6 mb-8">
@@ -32,7 +41,9 @@ const About = () => {
 
 					{/* What I've Learned */}
 					<div className="w-full md:w-1/2 lg:w-1/3 px-6 mb-8">
-						<h3 className="text-xl font-semibold mb-4">What I've Learned</h3>
+						<h3 className="text-xl font-semibold text-black mb-4">
+							What I've Learned
+						</h3>
 						<p className="text-gray-700">
 							Throughout my career, I have mastered a range of technologies and
 							tools. On the frontend, I’m proficient in{" "}

@@ -41,28 +41,28 @@ const Projects = () => {
 	};
 
 	return (
-		<section id="project" className="py-2 bg-gray-50 text-black">
-			<div className="container mx-auto px-2">
-				<div className="text-center mb-4">
-					<h2 className="text-3xl font-bold mb-4">Social Media App</h2>
-					<p className="text-lg text-gray-600">
+		<section id="project" className="py-12 bg-gray-50 text-black">
+			<div className="container mx-auto px-6">
+				<div className="text-center mb-12">
+					<h2 className="text-4xl font-extrabold mb-6">Social Media App</h2>
+					<p className="text-lg text-gray-700">
 						A fully functional and interactive social media app built from
 						scratch with real-time chat and various features.
 					</p>
 				</div>
-				<div className="flex flex-col md:flex-row md:justify-center">
+				<div className="flex flex-col md:flex-row md:justify-center gap-8">
 					{/* Project Overview */}
-					<div className="w-full md:w-2/3 lg:w-1/2 bg-white shadow-lg rounded-lg p-6 mb-8 md:mb-0">
+					<div className="w-full md:w-2/3 lg:w-1/2 bg-white shadow-lg rounded-lg p-8 mb-8 md:mb-0">
 						<h3 className="text-2xl font-semibold mb-4">Project Overview</h3>
-						<p className="text-gray-700 mb-4">
+						<p className="text-gray-800 mb-4">
 							This social media app allows users to interact through posts,
 							comments, and real-time chat. It includes a friend request system,
 							file uploads, and more. Built over 3 months, the app leverages a
 							variety of technologies to provide a seamless user experience.
 						</p>
-						<div className="mb-4">
+						<div className="mb-6">
 							<h4 className="text-xl font-semibold mb-2">Technologies Used:</h4>
-							<ul className="list-disc list-inside ml-6 text-gray-700">
+							<ul className="list-disc list-inside ml-6 text-gray-800">
 								<li>HTML & CSS</li>
 								<li>JavaScript</li>
 								<li>React.js</li>
@@ -76,9 +76,9 @@ const Projects = () => {
 								<li>Vite & Babel</li>
 							</ul>
 						</div>
-						<div className="mb-4">
+						<div className="mb-6">
 							<h4 className="text-xl font-semibold mb-2">Key Features:</h4>
-							<ul className="list-disc list-inside ml-6 text-gray-700">
+							<ul className="list-disc list-inside ml-6 text-gray-800">
 								<li>Real-time chat functionality</li>
 								<li>Friend request system</li>
 								<li>File uploads via Firebase</li>
@@ -86,9 +86,9 @@ const Projects = () => {
 								<li>Responsive design</li>
 							</ul>
 						</div>
-						<div className="mb-4">
+						<div className="mb-6">
 							<h4 className="text-xl font-semibold mb-2">Challenges Faced:</h4>
-							<p className="text-gray-700">
+							<p className="text-gray-800">
 								One of the most challenging parts was implementing the friend
 								request system. Despite seeking help, I had to solve the issues
 								independently, which provided me with significant learning
@@ -128,19 +128,28 @@ const Projects = () => {
 					className="modal"
 					overlayClassName="overlay"
 				>
-					<button onClick={closeLightbox} className="close-button">
-						X
+					<button
+						onClick={closeLightbox}
+						className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+					>
+						&times;
 					</button>
-					<button onClick={goToPrevImage} className="prev-button">
+					<button
+						onClick={goToPrevImage}
+						className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-900"
+					>
 						&lt;
 					</button>
-					<button onClick={goToNextImage} className="next-button">
+					<button
+						onClick={goToNextImage}
+						className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-900"
+					>
 						&gt;
 					</button>
 					<img
 						src={images[currentImageIndex]}
 						alt={`Full size screenshot ${currentImageIndex + 1}`}
-						className="full-image"
+						className="w-full h-auto max-w-screen-lg mx-auto"
 					/>
 				</Modal>
 			</div>

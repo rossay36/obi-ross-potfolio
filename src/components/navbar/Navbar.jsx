@@ -28,7 +28,7 @@ const Navbar = () => {
 		scrollToTop();
 	};
 	return (
-		<nav className="nav_full_screen">
+		<nav className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
 			<div className=" flex items-center gap-4 cursor-pointer">
 				<img
 					className="w-12 h-12 rounded-full object-cover"
