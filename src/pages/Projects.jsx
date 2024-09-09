@@ -96,7 +96,7 @@ const Projects = () => {
 							</p>
 						</div>
 						<a
-							href="https://your-app-link.com"
+							href="https://conn-world.onrender.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-blue-600 hover:underline"
